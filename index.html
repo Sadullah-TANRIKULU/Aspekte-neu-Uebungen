@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Deutsch Lernen</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/Learning-light-bulb.png"
+      type="image/x-icon"
+    />
+    <!-- Acme and Kanit fonts via Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="assets/3d-Online-Learning.png" alt="Logo" class="logo" />
+      <span class="title">Deutsch Lernen</span>
+      <select id="lesson-dropdown" aria-label="Lektion wählen"></select>
+    </header>
+    <main>
+      <div id="word-container">
+        <details id="word-details" class="word-details">
+          <summary id="german-word"></summary>
+          <div id="meaning"></div>
+        </details>
+        <div id="example-sentence"></div>
+      </div>
+      <button
+        id="round-btn"
+        class="round-btn"
+        aria-label="Nächstes Wort"
+      ></button>
+      <button id="hint-btn" class="hint-btn" aria-label="Tipp anzeigen">
+        💡
+      </button>
+      <div id="hint-balloon" class="hint-balloon" hidden></div>
+    </main>
+    <a
+      href="https://iconscout.com/3d-illustrations/online-learning"
+      class="text-underline font-size-sm"
+      target="_blank"
+      >Online Learning</a
+    >
+    by
+    <a
+      href="https://iconscout.com/contributors/mahendra"
+      class="text-underline font-size-sm"
+      target="_blank"
+      >Eklip Studio</a
+    ><a
+      href="https://iconscout.com/contributors/thebeststarticon"
+      class="text-underline font-size-sm"
+      target="_blank"
+      >thebeststarticon</a
+    >
+    <footer>
+      <span class="powered">Powered by TypeScript</span>
+    </footer>
+    <script type="module" src="./dist/app.js"></script>
+  </body>
+</html>

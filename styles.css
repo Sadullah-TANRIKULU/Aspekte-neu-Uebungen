@@ -82,9 +82,6 @@ main {
 }
 
 .hint-btn {
-  position: absolute;
-  bottom: 24rem;
-  right: 1.5rem;
   background: var(--accent);
   border: none;
   border-radius: 50%;
@@ -97,12 +94,10 @@ main {
 @keyframes pulse {
   0%, 100% { box-shadow: 0 0 0 0 var(--accent); }
   70% { box-shadow: 0 0 0 10px rgba(247,39,152,0.3); }
+  45% { box-shadow: 0 0 0 5px rgba(247,39,152,0.3); }
 }
 
 .hint-balloon {
-  position: absolute;
-  bottom: 22.5rem;
-  right: 3rem;
   background: var(--primary);
   color: var(--text);
   border-radius: 1rem;

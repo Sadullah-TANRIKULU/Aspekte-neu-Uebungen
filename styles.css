@@ -55,9 +55,16 @@ main {
 
 #word-container {
   text-indent: 40%;
-  margin-bottom: 2.1rem; /* Adjust as needed */
   width: 95vw;
   height: 13vh;
+}
+
+#german-word {
+  color: var(--secondary);
+}
+
+#meaning {
+  color: var(--accent);
 }
 
 
@@ -125,7 +132,6 @@ footer {
   .title { font-size: 1.2rem; }
   #word-container {
   text-indent: 20%;
-  margin-bottom: 2.1rem; /* Adjust as needed */
   width: 95vw;
   height: 13vh;
 }

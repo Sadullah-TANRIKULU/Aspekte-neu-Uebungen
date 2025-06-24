@@ -1,3 +1,19 @@
+//app.ts
+import { clearPWAData } from './sw-stopper';
+
+const logoElement = document.querySelector<HTMLImageElement>('.logo');
+
+if (logoElement) {
+  logoElement.addEventListener('click', () => {
+    const confirmClear = window.confirm('Cache und Service Worker wirklich löschen?');
+    if (confirmClear) {
+      clearPWAData().catch(err => console.error('Fehler beim Löschen des Caches:', err));
+    }
+  });
+} else {
+  console.warn('Logo-Element wurde nicht gefunden!');
+}
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./service-worker.js');
 }
@@ -10,6 +26,7 @@ type Word = {
   synonym: string;
   meaning: string;
 };
+
 
 const apiBase = "https://685888b2138a18086dfb2d6f.mockapi.io";
 const lessonDropdown = document.getElementById('lesson-dropdown') as HTMLSelectElement;
